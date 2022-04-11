@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/parent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dp"
+    android:background="#A19393"
+    android:backgroundTint="#A85757"
+    android:backgroundTintMode="add"
+    android:hapticFeedbackEnabled="false"
+    android:padding="20dp">
+
+
+    <ImageView
+        android:id="@+id/imageholder"
+        android:layout_width="94dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:adjustViewBounds="true"
+        android:padding="2dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/theader"
+        android:layout_width="61dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageholder"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="-12dp"
+        android:layout_marginEnd="-205dp"
+        android:layout_toStartOf="@+id/imageholder"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ville"
+        android:layout_width="49dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageholder"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="116dp"
+        android:layout_toStartOf="@+id/menuimage"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/sexe"
+        android:layout_width="47dp"
+        android:layout_height="25dp"
+        android:layout_alignBottom="@+id/imageholder"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="1dp"
+        android:layout_toStartOf="@+id/menuimage"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/ids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageholder"
+        android:layout_alignParentEnd="true"
+        android:text="TextView"
+        android:visibility="gone" />
+
+    <ImageButton
+        android:id="@+id/menuimage"
+        android:layout_width="25dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="-336dp"
+        android:layout_toStartOf="@+id/imageholder"
+        android:src="@drawable/menu" />
+
+</RelativeLayout>
